@@ -1,0 +1,26 @@
+@import 'assets/styles/variables.scss';
+
+.container {
+    max-width: $maxScreenWidth;
+    margin: 0 auto;
+    height: 100%;
+
+    .title {
+        margin-bottom: 10px;
+    }
+    .sub-title {
+        margin-bottom: 5px;
+    }
+
+    .section {
+        margin-bottom: 10px;
+        display: flex;
+        border-bottom: 1px solid #dcdcdc;
+        .item {
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            background: #8cacea;
+        }
+    }
+}
