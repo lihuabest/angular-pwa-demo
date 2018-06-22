@@ -1,0 +1,261 @@
+<div class="container">
+
+    <h6 class="title">flex-direction: row || column || row-reverse || column-reverse 子容器在父容器里的排列方式</h6>
+
+    <h6 class="sub-title">style="flex-direction: row" 默认值</h6>
+    <div class="section" style="flex-direction: row">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h6 class="sub-title">style="flex-direction: column"</h6>
+    <div class="section" style="flex-direction: column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+
+    <h6 class="title">flex-wrap: wrap || nowrap || wrap-reverse 子容器在父容器里的换行方式</h6>
+
+    <h6 class="sub-title">style="flex-wrap: nowrap" 默认值</h6>
+    <div class="section" style="flex-wrap: nowrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+
+    <h6 class="sub-title">style="flex-wrap: wrap"</h6>
+    <div class="section" style="flex-wrap: wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+
+    <h6 class="sub-title">style="flex-wrap: wrap-reverse" 这个排列有点神奇</h6>
+    <div class="section" style="flex-wrap: wrap-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+
+
+    <h6 class="title">flex-flow: flex-direction 和 flex-wrap 的组合属性</h6>
+
+    <h6 class="sub-title">style="flex-flow: column wrap"</h6>
+    <div class="section" style="flex-flow: column wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+
+    <h6 class="title">justify-content: flex-start || flex-end || center || space-between || space-around 定义子容器字主轴上的对齐方式</h6>
+
+    <h6 class="sub-title">style="justify-content: flex-start"</h6>
+    <div class="section" style="justify-content: flex-start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+
+    <h6 class="sub-title">style="justify-content: flex-end"</h6>
+    <div class="section" style="justify-content: flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+
+    <h6 class="sub-title">style="justify-content: flex-center"</h6>
+    <div class="section" style="justify-content: center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+
+    <h6 class="sub-title">style="justify-content: space-between" 两端对齐</h6>
+    <div class="section" style="justify-content: space-between">
+        <div class="item" style="margin: 10px 0;">1</div>
+        <div class="item" style="margin: 10px 0;">2</div>
+        <div class="item" style="margin: 10px 0;">3</div>
+    </div>
+
+    <h6 class="sub-title">style="justify-content: space-around" 平均对齐</h6>
+    <div class="section" style="justify-content: space-around">
+        <div class="item" style="margin: 10px 0;">1</div>
+        <div class="item" style="margin: 10px 0;">2</div>
+        <div class="item" style="margin: 10px 0;">3</div>
+    </div>
+
+
+    <h6 class="title">align-items: flex-start || flex-end || center || stretch || baseline 定义子容器字副轴上的填充方式</h6>
+
+    <h6 class="sub-title">style="align-items: stretch" 默认值, 让子容器高度上和父容器一致</h6>
+    <div class="section" style="align-items: stretch; height: 120px;">
+        <div class="item" style="height: auto;">1</div>
+        <div class="item" style="height: auto;">2</div>
+        <div class="item" style="height: auto;">3</div>
+    </div>
+
+    <h6 class="sub-title">style="align-items: flex-start" 内容包裹，靠主轴顶部对齐</h6>
+    <div class="section" style="align-items: flex-start; height: 120px;">
+        <div class="item" style="height: auto;">1</div>
+        <div class="item" style="height: auto;">2</div>
+        <div class="item" style="height: auto;">3<br/>new line</div>
+    </div>
+
+    <h6 class="sub-title">style="align-items: flex-end" 内容包裹，靠主轴低部对齐</h6>
+    <div class="section" style="align-items: flex-end; height: 120px;">
+        <div class="item" style="height: auto;">1</div>
+        <div class="item" style="height: auto;">2</div>
+        <div class="item" style="height: auto;">3<br/>new line</div>
+    </div>
+
+    <h6 class="sub-title">style="align-items: center" 内容包裹，靠主轴中部对齐</h6>
+    <div class="section" style="align-items: center; height: 120px;">
+        <div class="item" style="height: auto;">1</div>
+        <div class="item" style="height: auto;">2</div>
+        <div class="item" style="height: auto;">3<br/>new line</div>
+    </div>
+
+    <h6 class="sub-title">style="align-items: baseline" 内容包裹，靠主轴顶部的基线对齐</h6>
+    <div class="section" style="align-items: baseline; height: 120px;">
+        <div class="item" style="height: auto;">I'm list 1</div>
+        <div class="item" style="height: auto;font-size: 20px;">I'm list 2</div>
+        <div class="item" style="height: auto;font-size: 30px;">I'm list 3</div>
+    </div>
+
+
+    <h6 class="title">order: 0 排序权重 </h6>
+    <h6 class="sub-title">style="order: 1;" 可接受正负值，从低到高排列 默认为0</h6>
+    <div class="section">
+        <div class="item">order 0</div>
+        <div class="item" style="order: 1;">order 1</div>
+        <div class="item" style="order: -1;">order -1</div>
+    </div>
+
+
+    <h6 class="title">flex-grow: 0 控制子容器在 父容器 有多余空间的时候如何 扩展(按比例均分剩余空间) </h6>
+    <h6 class="sub-title">style="flex-grow: 1" 可接受任何大于等于0的正整数，0 是一个开关数据，为0的时候不会去扩展，大于0的时候会根据父容器扩展</h6>
+    <h6 class="sub-title">容器宽度= (父容器宽度-全部子容器宽度) / 所占比例 + 子容器宽度</h6>
+    <div class="section">
+        <div class="item" style="flex-grow: 1;margin: 10px 0;background: burlywood">width: (375 - (80 * 3) / 4) + 80 = 113.5</div>
+        <div class="item" style="flex-grow: 1;margin: 10px 0;background: cadetblue"></div>
+        <div class="item" style="flex-grow: 2;margin: 10px 0;"></div>
+    </div>
+
+
+    <h6 class="title">lex-shrink: 1 控制子容器在 父容器 没有多余空间的时候如何 收缩(按比例缩小缺少空间) </h6>
+
+    <h6 class="sub-title">style="flex-shrink: 1"</h6>
+    <div class="section">
+        <div class="item" style="flex-shrink: 1;margin: 10px 0;background: burlywood">width: 80 - (80 * 5 - 375) / 7</div>
+        <div class="item" style="flex-shrink: 1;margin: 10px 0;background: cadetblue">2</div>
+        <div class="item" style="flex-shrink: 1;margin: 10px 0;background: chocolate">3</div>
+        <div class="item" style="flex-shrink: 2;margin: 10px 0;background: cyan">4</div>
+        <div class="item" style="flex-shrink: 2;margin: 10px 0">5</div>
+    </div>
+
+
+    <h6 class="title">flex-basis: auto  指定flex项目的初始值 如果没有设置flex-basis属性，那么flex-basis的大小就是项目的width属性的大小 如果没有设置width属性，那么flex-basis的大小就是项目内容(content)的大小</h6>
+
+    <h6 class="sub-title">style="flex-basis: auto" 默认值，容器宽度就是本身</h6>
+    <div class="section">
+        <div class="item" style="flex-basis: auto;width: auto;">1</div>
+    </div>
+
+    <h6 class="sub-title">style="flex-basis: 100px" 覆盖容器本身宽度</h6>
+    <div class="section">
+        <div class="item" style="flex-basis: 100px;width: auto;">1</div>
+    </div>
+
+    <h6 class="sub-title">style="flex-basis: 100px" 覆盖容器本身宽度，宽度受限制于max-width</h6>
+    <div class="section">
+        <div class="item" style="flex-basis: 100px;width: auto;max-width: 80px;">1</div>
+    </div>
+
+    <h6 class="sub-title">style="flex-basis: 100px" 覆盖容器本身宽度，宽度不受限制于min-width</h6>
+    <div class="section">
+        <div class="item" style="flex-basis: 100px;width: auto;min-width: 80px;">1</div>
+    </div>
+
+
+    <h6 class="title">flex: flex是flex-grow、flex-shrink、flex-basis三个属性的简写</h6>
+
+    <h6 class="sub-title">style="flex: 0 1 auto" 各个属性的默认值</h6>
+    <div class="section">
+        <div class="item" style="flex: 0 1 auto">1</div>
+    </div>
+
+    <h6 class="sub-title">style="flex: 1 1 auto" 填充</h6>
+    <div class="section">
+        <div class="item" style="flex: 1 1 auto">1</div>
+        <div class="item" style="flex: 1 1 auto">2</div>
+        <div class="item" style="flex: 2 1 auto">3</div>
+    </div>
+
+    <h6 class="sub-title">style="flex: 1" 缺省，子容器宽度基于flex值， 这就是绝对的flex项目</h6>
+    <div class="section">
+        <div class="item" style="flex: 1">我是一条测试数据 我是一条测试数据</div>
+        <div class="item" style="flex: 1">测试</div>
+    </div>
+
+    <h6 class="sub-title">style="flex: auto" 自动填充 相当于 flex: 1 1 auto， 子容器的宽度相对于内容大小，这就是相对的flex项目</h6>
+    <div class="section">
+        <div class="item" style="flex: auto;width: auto;">我是一条测试数据 我是一条测试数据</div>
+        <div class="item" style="flex: auto;width: auto;">测试</div>
+    </div>
+
+    <h6 class="sub-title">当在Flex项目上使用 margin: auto 时，值为 auto 的方向（左、右或者二者都是）会占据所有剩余空间</h6>
+    <div class="section">
+        <div class="item" style="width: auto;margin-right: auto;">1</div>
+        <div class="item" style="width: auto;">2</div>
+        <div class="item" style="width: auto;">3</div>
+        <div class="item" style="width: auto;">4</div>
+        <div class="item" style="width: auto;">5</div>
+    </div>
+
+    <div class="section">
+        <div class="item" style="width: auto;margin-left: auto;margin-right: auto;">1</div>
+        <div class="item" style="width: auto;">2</div>
+        <div class="item" style="width: auto;">3</div>
+        <div class="item" style="width: auto;">4</div>
+        <div class="item" style="width: auto;">5</div>
+    </div>
+
+
+    <h6 class="title">align-self: auto || flex-start || flex-end || center || baseline || stretch 义flex子项单独在侧轴（纵轴）方向上的对齐方式</h6>
+
+    <h6 class="sub-title">style="align-self: center" </h6>
+    <div class="section" style="justify-content: flex-start;height: 120px;">
+        <div class="item" style="height: auto;flex: 1;">1</div>
+        <div class="item" style="height: auto;flex: 1; align-self: center">2<br> next line</div>
+        <div class="item" style="height: auto;flex: 1;">3</div>
+    </div>
+
+    <h6 class="sub-title">style="align-self: flex-start" </h6>
+    <div class="section" style="justify-content: flex-start;height: 120px;">
+        <div class="item" style="height: auto;flex: 1;">1</div>
+        <div class="item" style="height: auto;flex: 1; align-self: flex-start;">2<br> next line</div>
+        <div class="item" style="height: auto;flex: 1;">3</div>
+    </div>
+
+    <h6 class="sub-title">style="align-self: stretch" 高度填满父容器</h6>
+    <div class="section" style="justify-content: flex-start;height: 120px;">
+        <div class="item" style="height: auto;flex: 1;">1</div>
+        <div class="item" style="height: auto;flex: 1; align-self: stretch;">2<br> next line</div>
+        <div class="item" style="height: auto;flex: 1;">3</div>
+    </div>
+
+</div>
