@@ -1,0 +1,16 @@
+.container {
+    & > div {
+        color: red;
+        width: 120px;
+        position: relative;
+        &::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: greenyellow;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
